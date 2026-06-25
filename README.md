@@ -29,3 +29,23 @@ upstream project.
 
 Before any real scientific use, toy examples should be replaced with
 literature-backed records and explicit provenance.
+
+## Hypothesis Framework
+
+`Literature via FlashP`:
+  Arabidopsis/rice/maize define the causal prior.
+
+`Senecio RNA-seq`:
+  the same pathway modules respond during your experiment.
+
+`WGCNA`:
+  modules containing candidate pathway genes correlate with bending.
+
+`eQTL/MAGIC`:
+  genetic variation affects expression of those modules or genes.
+
+`Phenotype`:
+  families differ in bending trajectory.
+
+`Together`:
+  a literature-supported gravitropism network is active and genetically variable in Senecio.

@@ -1,0 +1,6 @@
+citation_short,doi,evidence_stream,species,used_in_flashp_json,notes
+Morita et al. 2002,10.1105/tpc.010216,arabidopsis_mechanistic_prior,Arabidopsis thaliana,yes,"Seed primary-paper reference for shoot gravity-sensing / statocyte-amyloplast context."
+Nakamura et al. 2011,10.1105/tpc.110.079442,arabidopsis_mechanistic_prior,Arabidopsis thaliana,yes,"Seed primary-paper reference for LAZY1-like function in shoot gravitropism."
+Rakusova et al. 2011,10.1111/j.1365-313X.2011.04636.x,arabidopsis_mechanistic_prior,Arabidopsis thaliana,yes,"Seed primary-paper reference for PIN-dependent auxin redistribution and gravitropic response."
+Taniguchi et al. 2017,10.1105/tpc.16.00575,arabidopsis_mechanistic_prior,Arabidopsis thaliana,yes,"Seed primary-paper reference for LZY-family gravity signalling and auxin-flow links."
+Yoshihara and Spalding 2017,10.1104/pp.17.00942,arabidopsis_mechanistic_prior,Arabidopsis thaliana,yes,"Seed primary-paper reference for LAZY-family roles in gravitropism; used for perturbation prior only in this pass."

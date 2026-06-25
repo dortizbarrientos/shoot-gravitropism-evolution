@@ -1,0 +1,70 @@
+{
+  "metadata": {
+    "flash_p_version": "light-1.0",
+    "phenotype": "shoot gravitropic bending over time",
+    "species": "Arabidopsis thaliana",
+    "created": "2026-06-25",
+    "total_edges": 7
+  },
+  "nodes": {
+    "Gravistimulation": "E",
+    "Amyloplast_Displacement": "PR",
+    "LAZY_LZY_Module": "G",
+    "PIN_Auxin_Redistribution": "PR",
+    "Auxin_Asymmetry": "H",
+    "Differential_Cell_Expansion": "PR",
+    "Curvature": "PR",
+    "Shoot_Gravitropic_Bending_Over_Time": "P"
+  },
+  "edges": [
+    {
+      "eid": "E001",
+      "s": "Gravistimulation",
+      "t": "Amyloplast_Displacement",
+      "x": 1,
+      "d": "10.1105/tpc.010216"
+    },
+    {
+      "eid": "E002",
+      "s": "Amyloplast_Displacement",
+      "t": "LAZY_LZY_Module",
+      "x": 1,
+      "d": "10.1105/tpc.16.00575"
+    },
+    {
+      "eid": "E003",
+      "s": "LAZY_LZY_Module",
+      "t": "PIN_Auxin_Redistribution",
+      "x": 1,
+      "d": "10.1105/tpc.16.00575"
+    },
+    {
+      "eid": "E004",
+      "s": "LAZY_LZY_Module",
+      "t": "PIN_Auxin_Redistribution",
+      "x": 1,
+      "d": "10.1105/tpc.110.079442"
+    },
+    {
+      "eid": "E005",
+      "s": "PIN_Auxin_Redistribution",
+      "t": "Auxin_Asymmetry",
+      "x": 1,
+      "d": "10.1111/j.1365-313X.2011.04636.x"
+    },
+    {
+      "eid": "E006",
+      "s": "Auxin_Asymmetry",
+      "t": "Differential_Cell_Expansion",
+      "x": 1,
+      "d": "10.1111/j.1365-313X.2011.04636.x"
+    },
+    {
+      "eid": "E007",
+      "s": "Differential_Cell_Expansion",
+      "t": "Curvature",
+      "x": 1,
+      "d": "10.1111/j.1365-313X.2011.04636.x"
+    }
+  ]
+}

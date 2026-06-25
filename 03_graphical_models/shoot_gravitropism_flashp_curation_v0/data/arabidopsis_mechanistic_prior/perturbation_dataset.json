@@ -1,0 +1,43 @@
+{
+  "metadata": {
+    "flash_p_version": "light-1.0",
+    "phenotype": "shoot gravitropic bending over time",
+    "species": "Arabidopsis thaliana",
+    "created": "2026-06-25",
+    "total_perturbations": 4
+  },
+  "perturbations": [
+    {
+      "id": "T001",
+      "g": "LAZY1",
+      "pt": "ko",
+      "ed": "dn",
+      "sp": "Arabidopsis thaliana",
+      "d": "10.1105/tpc.110.079442"
+    },
+    {
+      "id": "T002",
+      "g": "LZY3_LZY4",
+      "pt": "ko",
+      "ed": "dn",
+      "sp": "Arabidopsis thaliana",
+      "d": "10.1105/tpc.16.00575"
+    },
+    {
+      "id": "T003",
+      "g": "PIN3",
+      "pt": "ko",
+      "ed": "dn",
+      "sp": "Arabidopsis thaliana",
+      "d": "10.1111/j.1365-313X.2011.04636.x"
+    },
+    {
+      "id": "T004",
+      "g": "LAZY_gene_family",
+      "pt": "ko",
+      "ed": "dn",
+      "sp": "Arabidopsis thaliana",
+      "d": "10.1104/pp.17.00942"
+    }
+  ]
+}
