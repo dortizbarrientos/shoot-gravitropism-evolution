@@ -6,12 +6,13 @@ These files are not source data.
 
 The editable source tables remain `candidate_nodes.csv` and `candidate_edges.csv` in the model folder.
 
-## Generated Files
+## Retained Files
 
-- `network_preview.dot`: Graphviz DOT representation.
-- `network_preview.mmd`: Mermaid flowchart representation.
-- `network_preview.svg`: Graphviz-rendered SVG preview.
-- `network_preview.png`: Graphviz-rendered PNG quick-review preview.
+- `network_preview.svg`: vector working preview.
+- `network_preview.png`: quick-review image.
+- `README.md`: notes for this view.
+
+The intermediate Graphviz DOT and Mermaid files are reproducible from the source CSV tables and `tools/render_network.py`, but they are not retained here.
 
 ## Interpretation
 

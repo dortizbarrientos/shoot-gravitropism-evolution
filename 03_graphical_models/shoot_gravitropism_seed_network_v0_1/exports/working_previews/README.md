@@ -11,6 +11,14 @@ They are not publication-quality figures.
 
 They are for checking graph logic, edge direction, signs, modules, and relation types.
 
+Each view keeps:
+
+- `network_preview.svg`: vector working preview.
+- `network_preview.png`: quick-review image.
+- `README.md`: view notes.
+
+Intermediate `.dot` and `.mmd` files are reproducible from the CSV tables and `tools/render_network.py`, but they are not retained in these folders.
+
 ## Views
 
 ### 01_causal_spine_view

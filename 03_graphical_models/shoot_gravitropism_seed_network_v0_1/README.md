@@ -14,15 +14,28 @@ The v0.1 model changes that structure:
 - `Gravitropic_vs_Agravitropic_Families` is treated as an observed classification downstream of bending behaviour, not as a causal driver.
 - `relation_type` separates direct causal hypotheses from modulation, context, and classification relationships.
 - `sign = NA` is used where a relation is not a simple positive or negative causal edge.
-- `include_in_first_sbgn` marks which edges should be considered for the first SBGN Activity Flow export.
-
-No v0.1 SBGN file has been created yet.
+- `include_in_first_sbgn` marks which edges were considered for the first SBGN Activity Flow export and working preview figures.
 
 ## Files
 
 - `candidate_nodes.csv`: hypothesis-level nodes for the v0.1 network.
 - `candidate_edges.csv`: hypothesis-level relationships among nodes.
 - `evidence_gaps.md`: notes on missing evidence and literature checks needed before curation.
+- `sbgn/`: SBGN Activity Flow draft for the causal spine.
+- `exports/`: derived visual outputs, including working previews.
+
+## Derived Outputs
+
+The v0.1 model now has:
+
+- an SBGN Activity Flow draft of the causal spine in `sbgn/`;
+- working preview figures in `exports/working_previews/`.
+
+These files are derived from the CSV tables.
+
+They are not the editable source of truth.
+
+The working previews are for checking graph logic, signs, edge direction, modules, and relation types. They are not final publication figures.
 
 ## How To Read `candidate_edges.csv`
 

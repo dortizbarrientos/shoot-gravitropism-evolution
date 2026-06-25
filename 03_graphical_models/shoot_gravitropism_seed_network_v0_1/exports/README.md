@@ -1,20 +1,21 @@
 # Derived Network Previews
 
-This folder contains terminal-generated previews derived from candidate network CSV tables.
+This folder contains visual outputs derived from the v0.1 candidate network CSV tables.
 
 These files are not source data.
 
 The editable source tables remain `candidate_nodes.csv` and `candidate_edges.csv` in the model folder.
 
-## Generated Files
+## Current Contents
 
-- `network_preview.dot`: Graphviz DOT representation.
-- `network_preview.mmd`: Mermaid flowchart representation.
-- `network_preview.svg`: Graphviz-rendered SVG preview.
+- `working_previews/`: retained working previews for graph inspection.
+- `shoot_gravitropism_seed_network_v0_1_causal_spine_preview.svg`: an earlier hand-authored causal-spine SVG kept as a learning artifact.
+
+The older top-level `network_preview.dot`, `network_preview.mmd`, and `network_preview.svg` files were removed because they were superseded by the organized `working_previews/` folders.
 
 ## Interpretation
 
-These previews are for inspection, teaching, and discussion.
+Working previews are for inspection, teaching, and discussion.
 
 They do not make the biology curated.
 
