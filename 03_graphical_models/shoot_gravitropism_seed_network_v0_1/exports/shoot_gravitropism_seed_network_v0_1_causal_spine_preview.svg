@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1680" height="440" viewBox="0 0 1680 440" role="img" aria-labelledby="title desc">
+  <title id="title">Shoot gravitropism seed network v0.1 causal spine</title>
+  <desc id="desc">Hypothesis-level visual preview of the v0.1 shoot gravitropism causal spine from gravistimulation to bending over time.</desc>
+  <defs>
+    <marker id="arrow-positive" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#1f6f5b"/>
+    </marker>
+    <style>
+      .background { fill: #fbfbf7; }
+      .title { font: 700 24px Arial, sans-serif; fill: #1e2528; }
+      .subtitle { font: 15px Arial, sans-serif; fill: #4d5b5f; }
+      .compartment { fill: #f4f0e5; stroke: #b9ad96; stroke-width: 1.5; }
+      .compartment-label { font: 700 14px Arial, sans-serif; fill: #4a4439; text-transform: uppercase; letter-spacing: 0; }
+      .node { fill: #ffffff; stroke: #2f5e73; stroke-width: 2; rx: 9; }
+      .node-text { font: 700 14px Arial, sans-serif; fill: #17313b; text-anchor: middle; dominant-baseline: middle; }
+      .edge { fill: none; stroke: #1f6f5b; stroke-width: 3; marker-end: url(#arrow-positive); }
+      .edge-label { font: 700 12px Arial, sans-serif; fill: #1f6f5b; text-anchor: middle; }
+      .note { font: 13px Arial, sans-serif; fill: #4d5b5f; }
+    </style>
+  </defs>
+
+  <rect class="background" x="0" y="0" width="1680" height="440"/>
+  <text class="title" x="40" y="42">Shoot gravitropism seed network v0.1: causal spine</text>
+  <text class="subtitle" x="40" y="68">Hypothesis-level visual preview. Only edges marked include_in_first_sbgn = yes are shown.</text>
+
+  <rect class="compartment" x="40" y="105" width="245" height="160" rx="6"/>
+  <text class="compartment-label" x="60" y="132">Stimulus</text>
+
+  <rect class="compartment" x="325" y="105" width="260" height="160" rx="6"/>
+  <text class="compartment-label" x="345" y="132">Sensing</text>
+
+  <rect class="compartment" x="625" y="85" width="340" height="235" rx="6"/>
+  <text class="compartment-label" x="645" y="112">Signalling</text>
+
+  <rect class="compartment" x="1005" y="70" width="320" height="300" rx="6"/>
+  <text class="compartment-label" x="1025" y="97">Response</text>
+
+  <rect class="compartment" x="1365" y="105" width="275" height="160" rx="6"/>
+  <text class="compartment-label" x="1385" y="132">Phenotype</text>
+
+  <rect class="node" x="72" y="165" width="180" height="62" rx="9"/>
+  <text class="node-text" x="162" y="188">Gravistimulation</text>
+  <text class="node-text" x="162" y="207">/ rotation</text>
+
+  <rect class="node" x="365" y="165" width="180" height="62" rx="9"/>
+  <text class="node-text" x="455" y="188">Amyloplast</text>
+  <text class="node-text" x="455" y="207">displacement</text>
+
+  <rect class="node" x="690" y="135" width="180" height="62" rx="9"/>
+  <text class="node-text" x="780" y="158">LAZY/LZY</text>
+  <text class="node-text" x="780" y="177">module</text>
+
+  <rect class="node" x="675" y="235" width="210" height="62" rx="9"/>
+  <text class="node-text" x="780" y="258">PIN-mediated auxin</text>
+  <text class="node-text" x="780" y="277">redistribution</text>
+
+  <rect class="node" x="1065" y="120" width="180" height="62" rx="9"/>
+  <text class="node-text" x="1155" y="143">Auxin</text>
+  <text class="node-text" x="1155" y="162">asymmetry</text>
+
+  <rect class="node" x="1050" y="215" width="210" height="62" rx="9"/>
+  <text class="node-text" x="1155" y="238">Differential cell</text>
+  <text class="node-text" x="1155" y="257">expansion</text>
+
+  <rect class="node" x="1065" y="305" width="180" height="50" rx="9"/>
+  <text class="node-text" x="1155" y="331">Curvature</text>
+
+  <rect class="node" x="1405" y="165" width="195" height="62" rx="9"/>
+  <text class="node-text" x="1502.5" y="188">Shoot bending</text>
+  <text class="node-text" x="1502.5" y="207">over time</text>
+
+  <path class="edge" d="M 252 196 L 365 196"/>
+  <text class="edge-label" x="308" y="184">H001 +</text>
+
+  <path class="edge" d="M 545 190 C 605 170, 625 166, 690 166"/>
+  <text class="edge-label" x="617" y="156">H003 +</text>
+
+  <path class="edge" d="M 780 197 L 780 235"/>
+  <text class="edge-label" x="815" y="220">H004 +</text>
+
+  <path class="edge" d="M 885 266 C 965 250, 990 151, 1065 151"/>
+  <text class="edge-label" x="976" y="210">H005 +</text>
+
+  <path class="edge" d="M 1155 182 L 1155 215"/>
+  <text class="edge-label" x="1190" y="204">H006 +</text>
+
+  <path class="edge" d="M 1155 277 L 1155 305"/>
+  <text class="edge-label" x="1190" y="296">H007 +</text>
+
+  <path class="edge" d="M 1245 330 C 1325 330, 1340 196, 1405 196"/>
+  <text class="edge-label" x="1328" y="287">H008 +</text>
+
+  <text class="note" x="40" y="405">Excluded from this preview: context edge H002, genotype modulation edges H009-H012, and classification edge H013.</text>
+  <text class="note" x="40" y="425">This diagram is derived from the v0.1 SBGN draft and candidate edge table; it is not curated biological evidence.</text>
+</svg>

@@ -1,0 +1,51 @@
+digraph network_preview {
+  graph [rankdir=LR, bgcolor="white", compound=true, fontname="Helvetica", label="Hypothesis-level network preview derived from candidate CSV tables", labelloc=t];
+  node [shape=box, style="rounded,filled", fillcolor="white", color="#455a64", fontname="Helvetica", fontsize=11];
+  edge [fontname="Helvetica", fontsize=9];
+
+  subgraph cluster_0 {
+    label="phenotype";
+    color="#d0d7de";
+    style="rounded";
+    "Shoot_Gravitropic_Bending_Over_Time" [label="Shoot gravitropic bending over time"];
+  }
+
+  subgraph cluster_1 {
+    label="response";
+    color="#d0d7de";
+    style="rounded";
+    "Auxin_Asymmetry" [label="Auxin asymmetry"];
+    "Curvature" [label="Curvature"];
+    "Differential_Cell_Expansion" [label="Differential cell expansion"];
+  }
+
+  subgraph cluster_2 {
+    label="sensing";
+    color="#d0d7de";
+    style="rounded";
+    "Amyloplast_Displacement" [label="Amyloplast displacement"];
+  }
+
+  subgraph cluster_3 {
+    label="signalling";
+    color="#d0d7de";
+    style="rounded";
+    "LAZY_LZY_Module" [label="LAZY/LZY module"];
+    "PIN_Auxin_Redistribution" [label="PIN-mediated auxin redistribution"];
+  }
+
+  subgraph cluster_4 {
+    label="stimulus";
+    color="#d0d7de";
+    style="rounded";
+    "Gravistimulation" [label="Gravistimulation / rotation"];
+  }
+
+  "Gravistimulation" -> "Amyloplast_Displacement" [label="H001 +", color="black", fontcolor="black", style="solid", arrowhead="normal"];
+  "Amyloplast_Displacement" -> "LAZY_LZY_Module" [label="H003 +", color="black", fontcolor="black", style="solid", arrowhead="normal"];
+  "LAZY_LZY_Module" -> "PIN_Auxin_Redistribution" [label="H004 +", color="black", fontcolor="black", style="solid", arrowhead="normal"];
+  "PIN_Auxin_Redistribution" -> "Auxin_Asymmetry" [label="H005 +", color="black", fontcolor="black", style="solid", arrowhead="normal"];
+  "Auxin_Asymmetry" -> "Differential_Cell_Expansion" [label="H006 +", color="black", fontcolor="black", style="solid", arrowhead="normal"];
+  "Differential_Cell_Expansion" -> "Curvature" [label="H007 +", color="black", fontcolor="black", style="solid", arrowhead="normal"];
+  "Curvature" -> "Shoot_Gravitropic_Bending_Over_Time" [label="H008 +", color="black", fontcolor="black", style="solid", arrowhead="normal"];
+}

@@ -16,6 +16,21 @@ comparisons into a clear scientific project.
 - Keep notes close to the modelling step they describe.
 - Use existing project folders before creating new ones.
 
+## Subagent Use
+
+- Use one main Codex agent by default.
+- Do not spawn subagents unless I explicitly ask for them.
+- Use subagents only for bounded, independent tasks such as literature
+  searches, codebase inspection, tool comparison, or checking separate evidence
+  streams.
+- Do not use multiple agents to edit the same files in parallel.
+- When subagents are used, assign each one a clear scope and ask for a concise
+  written summary.
+- The main agent must integrate subagent findings and decide what, if anything,
+  should be edited.
+- For this project, prefer single-agent work when editing network CSVs,
+  AGENTS.md, README files, or model source files.
+
 ## Scientific Caution
 
 - Keep toy examples separate from curated biological claims.
@@ -44,6 +59,24 @@ comparisons into a clear scientific project.
   primary-paper-supported, or curated.
 - Do not treat a diagram standard such as SBGN as evidence that the biology is
   correct.
+
+## Visualisation Workflow
+
+- candidate_nodes.csv and candidate_edges.csv remain the source of truth for
+  network structure.
+- Graphviz and Mermaid outputs are derived previews for inspection, teaching,
+  and documentation.
+- SBGN files are derived standards-oriented representations, not the editable
+  source of truth.
+- Newt may be used occasionally for SBGN visual validation, but it is not
+  required for daily work.
+- Prefer terminal-first visualisation from CSV tables before using GUI tools.
+- Do not install visualisation dependencies unless explicitly asked.
+- Do not run PSoup, SBGNview, Cytoscape, or other model-conversion tools unless
+  explicitly asked.
+- Place generated visual outputs in an exports/ folder near the relevant model
+  version.
+- Clearly label generated previews as derived artifacts.
 
 ## Reproducibility
 
