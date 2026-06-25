@@ -77,6 +77,10 @@ comparisons into a clear scientific project.
 - Place generated visual outputs in an exports/ folder near the relevant model
   version.
 - Clearly label generated previews as derived artifacts.
+- When exporting SVG figures for review in ChatGPT or other preview tools, also
+  create a PNG copy for visual inspection.
+- For future network previews, always export both .svg and .png. 
+  Treat SVG as the editable/vector source and PNG as the quick-review file.
 
 ## Publication Figure Rules
 
@@ -142,6 +146,45 @@ comparisons into a clear scientific project.
   a publication-figure review.
 - Do not treat a visually polished network as stronger evidence than the
   underlying references.
+
+## Reproducible Figure Code
+
+- Prefer Python-generated figures for reproducible manuscript figure elements.
+- Keep figure code in Git beside the model version it renders.
+- Keep the input CSV tables, optional layout CSV files, plotting scripts, and
+  generated outputs together or clearly linked.
+- Use candidate_nodes.csv and candidate_edges.csv as the source of truth for
+  network content.
+- Use NetworkX for graph checks, path checks, filtering, and structural
+  diagnostics.
+- Do not rely on NetworkX default drawing for final manuscript figures.
+- Use Graphviz for quick automatic layout previews when useful.
+- For publication-quality network figures, prefer scripted matplotlib/SVG/PDF
+  output with fixed node coordinates and explicit styling.
+- Export both vector output, such as SVG or PDF, and a PNG preview for quick
+  inspection.
+- Treat generated figures as derived artifacts; if the CSV changes, regenerate
+  the figure.
+- Do not install Python plotting dependencies unless explicitly asked.
+
+## Generated File Hygiene
+
+- Do not keep every exploratory render.
+- Keep source files, scripts, reviewed outputs, and README notes.
+- Treat raw preview outputs as disposable unless they are explicitly selected
+  for retention.
+- Prefer a small number of named outputs over many auto-numbered variants.
+- Use exports/working_previews/ for temporary visual checks.
+- Use exports/publication_drafts/ for selected figure elements worth refining.
+- Do not delete files without showing a cleanup plan first.
+- Before cleanup, list files proposed for deletion and explain why each is safe
+  to remove.
+- Never delete source CSVs, scripts, README files, evidence notes, SBGN files,
+  or committed results unless explicitly asked.
+- If a generated file can be reproduced from source tables and scripts, it may
+  be removed after the retained output is chosen.
+- Keep .gitignore updated so caches, logs, and bulky temporary exports do not
+  accumulate.
 
 ## Reproducibility
 

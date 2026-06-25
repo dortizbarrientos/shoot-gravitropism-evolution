@@ -253,10 +253,14 @@ def render_mermaid(nodes: dict[str, dict[str, str]], edges: list[dict[str, str]]
 
 
 def write_readme(outdir: Path, dot_available: bool) -> None:
-    svg_note = (
+    graphviz_notes = (
         "- `network_preview.svg`: Graphviz-rendered SVG preview.\n"
+        "- `network_preview.png`: Graphviz-rendered PNG quick-review preview.\n"
         if dot_available
-        else "- `network_preview.svg`: not written because Graphviz `dot` was not found.\n"
+        else (
+            "- `network_preview.svg`: not written because Graphviz `dot` was not found.\n"
+            "- `network_preview.png`: not written because Graphviz `dot` was not found.\n"
+        )
     )
     readme = f"""# Derived Network Previews
 
@@ -270,7 +274,7 @@ The editable source tables remain `candidate_nodes.csv` and `candidate_edges.csv
 
 - `network_preview.dot`: Graphviz DOT representation.
 - `network_preview.mmd`: Mermaid flowchart representation.
-{svg_note}
+{graphviz_notes}
 ## Interpretation
 
 These previews are for inspection, teaching, and discussion.
@@ -303,6 +307,7 @@ def main() -> None:
     dot_path = outdir / "network_preview.dot"
     mmd_path = outdir / "network_preview.mmd"
     svg_path = outdir / "network_preview.svg"
+    png_path = outdir / "network_preview.png"
 
     dot_path.write_text(render_dot(nodes, included_edges), encoding="utf-8")
     mmd_path.write_text(render_mermaid(nodes, included_edges), encoding="utf-8")
@@ -313,6 +318,10 @@ def main() -> None:
             [dot_executable, "-Tsvg", str(dot_path), "-o", str(svg_path)],
             check=True,
         )
+        subprocess.run(
+            [dot_executable, "-Tpng", str(dot_path), "-o", str(png_path)],
+            check=True,
+        )
 
     write_readme(outdir, dot_available=bool(dot_executable))
 
@@ -320,8 +329,9 @@ def main() -> None:
     print(f"Wrote {mmd_path}")
     if dot_executable:
         print(f"Wrote {svg_path}")
+        print(f"Wrote {png_path}")
     else:
-        print("Skipped network_preview.svg because Graphviz dot was not found.")
+        print("Skipped network_preview.svg and network_preview.png because Graphviz dot was not found.")
 
 
 if __name__ == "__main__":
