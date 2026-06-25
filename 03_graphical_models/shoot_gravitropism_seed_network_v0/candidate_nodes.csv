@@ -1,0 +1,13 @@
+node_id,label,layer,node_type,status,plain_english_role
+Gravistimulation,Gravistimulation / rotation,stimulus,stimulus,hypothesis,"A change in shoot orientation relative to gravity."
+Statocytes,Statocytes,sensing,tissue_or_cell_type,hypothesis,"Gravity-sensing cells proposed to detect the stimulus."
+Endodermis,Endodermis,sensing,tissue,hypothesis,"Shoot tissue layer often discussed as part of gravity sensing."
+Amyloplast_Sedimentation,Amyloplast sedimentation,sensing,process,hypothesis,"Movement or settling of starch-filled plastids after reorientation."
+LAZY_LZY_Module,LAZY/LZY module,signalling,gene_module,hypothesis,"A signalling module proposed to link gravity perception to auxin transport polarity."
+PIN_Auxin_Redistribution,PIN-mediated auxin redistribution,signalling,transport_process,hypothesis,"Redistribution of auxin mediated by PIN transporters."
+Auxin_Asymmetry,Auxin asymmetry,response,hormone_state,hypothesis,"Unequal auxin distribution across the shoot."
+Differential_Cell_Expansion,Differential cell expansion,response,growth_process,hypothesis,"Unequal expansion across sides of the shoot."
+Curvature,Curvature,response,trait_component,hypothesis,"Physical bending of the shoot axis."
+Shoot_Gravitropic_Bending_Over_Time,Shoot gravitropic bending over time,phenotype,phenotype,hypothesis,"Time-dependent bending response after gravistimulation."
+Family_Genotype_Effects,Family / genotype effects,evolutionary_layer,evolutionary_factor,hypothesis,"Inherited genetic background differences that may modify the response."
+Gravitropic_vs_Agravitropic_Families,Gravitropic vs agravitropic families,evolutionary_layer,comparative_trait,hypothesis,"Comparative grouping of lineages or families by gravitropic behaviour."

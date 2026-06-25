@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<sbgn xmlns="http://sbgn.org/libsbgn/0.2">
+  <map language="activity flow">
+    <glyph id="comp_stimulus" class="compartment">
+      <label text="Stimulus"/>
+      <bbox x="20" y="20" w="260" h="160"/>
+    </glyph>
+    <glyph id="comp_sensing" class="compartment">
+      <label text="Sensing"/>
+      <bbox x="320" y="20" w="300" h="260"/>
+    </glyph>
+    <glyph id="comp_signalling" class="compartment">
+      <label text="Signalling"/>
+      <bbox x="660" y="20" w="300" h="220"/>
+    </glyph>
+    <glyph id="comp_response" class="compartment">
+      <label text="Response"/>
+      <bbox x="1000" y="20" w="300" h="300"/>
+    </glyph>
+    <glyph id="comp_phenotype" class="compartment">
+      <label text="Phenotype"/>
+      <bbox x="1340" y="20" w="300" h="160"/>
+    </glyph>
+    <glyph id="comp_evolutionary_layer" class="compartment">
+      <label text="Evolutionary layer"/>
+      <bbox x="660" y="380" w="640" h="220"/>
+    </glyph>
+
+    <glyph id="n_Gravistimulation" class="biological activity" compartmentRef="comp_stimulus">
+      <label text="Gravistimulation / rotation"/>
+      <bbox x="70" y="80" w="160" h="60"/>
+    </glyph>
+    <glyph id="n_Statocytes" class="biological activity" compartmentRef="comp_sensing">
+      <label text="Statocytes"/>
+      <bbox x="380" y="60" w="160" h="60"/>
+    </glyph>
+    <glyph id="n_Endodermis" class="biological activity" compartmentRef="comp_sensing">
+      <label text="Endodermis"/>
+      <bbox x="380" y="140" w="160" h="60"/>
+    </glyph>
+    <glyph id="n_Amyloplast_Sedimentation" class="biological activity" compartmentRef="comp_sensing">
+      <label text="Amyloplast sedimentation"/>
+      <bbox x="380" y="220" w="180" h="60"/>
+    </glyph>
+    <glyph id="n_LAZY_LZY_Module" class="biological activity" compartmentRef="comp_signalling">
+      <label text="LAZY/LZY module"/>
+      <bbox x="720" y="80" w="160" h="60"/>
+    </glyph>
+    <glyph id="n_PIN_Auxin_Redistribution" class="biological activity" compartmentRef="comp_signalling">
+      <label text="PIN-mediated auxin redistribution"/>
+      <bbox x="720" y="160" w="200" h="60"/>
+    </glyph>
+    <glyph id="n_Auxin_Asymmetry" class="biological activity" compartmentRef="comp_response">
+      <label text="Auxin asymmetry"/>
+      <bbox x="1060" y="60" w="160" h="60"/>
+    </glyph>
+    <glyph id="n_Differential_Cell_Expansion" class="biological activity" compartmentRef="comp_response">
+      <label text="Differential cell expansion"/>
+      <bbox x="1060" y="140" w="190" h="60"/>
+    </glyph>
+    <glyph id="n_Curvature" class="biological activity" compartmentRef="comp_response">
+      <label text="Curvature"/>
+      <bbox x="1060" y="220" w="160" h="60"/>
+    </glyph>
+    <glyph id="n_Shoot_Gravitropic_Bending_Over_Time" class="biological activity" compartmentRef="comp_phenotype">
+      <label text="Shoot gravitropic bending over time"/>
+      <bbox x="1390" y="80" w="200" h="60"/>
+    </glyph>
+    <glyph id="n_Family_Genotype_Effects" class="biological activity" compartmentRef="comp_evolutionary_layer">
+      <label text="Family / genotype effects"/>
+      <bbox x="720" y="460" w="180" h="60"/>
+    </glyph>
+    <glyph id="n_Gravitropic_vs_Agravitropic_Families" class="biological activity" compartmentRef="comp_evolutionary_layer">
+      <label text="Gravitropic vs agravitropic families"/>
+      <bbox x="1020" y="460" w="220" h="60"/>
+    </glyph>
+
+    <arc id="H001" class="positive influence" source="n_Gravistimulation" target="n_Statocytes">
+      <start x="230" y="100"/>
+      <end x="380" y="90"/>
+    </arc>
+    <arc id="H002" class="positive influence" source="n_Gravistimulation" target="n_Endodermis">
+      <start x="230" y="110"/>
+      <end x="380" y="170"/>
+    </arc>
+    <arc id="H003" class="positive influence" source="n_Gravistimulation" target="n_Amyloplast_Sedimentation">
+      <start x="230" y="120"/>
+      <end x="380" y="250"/>
+    </arc>
+    <arc id="H004" class="positive influence" source="n_Statocytes" target="n_Amyloplast_Sedimentation">
+      <start x="460" y="120"/>
+      <end x="460" y="220"/>
+    </arc>
+    <arc id="H005" class="positive influence" source="n_Endodermis" target="n_Amyloplast_Sedimentation">
+      <start x="460" y="200"/>
+      <end x="470" y="220"/>
+    </arc>
+    <arc id="H006" class="positive influence" source="n_Amyloplast_Sedimentation" target="n_LAZY_LZY_Module">
+      <start x="560" y="250"/>
+      <end x="720" y="110"/>
+    </arc>
+    <arc id="H007" class="positive influence" source="n_LAZY_LZY_Module" target="n_PIN_Auxin_Redistribution">
+      <start x="800" y="140"/>
+      <end x="810" y="160"/>
+    </arc>
+    <arc id="H008" class="positive influence" source="n_PIN_Auxin_Redistribution" target="n_Auxin_Asymmetry">
+      <start x="920" y="190"/>
+      <end x="1060" y="90"/>
+    </arc>
+    <arc id="H009" class="positive influence" source="n_Auxin_Asymmetry" target="n_Differential_Cell_Expansion">
+      <start x="1140" y="120"/>
+      <end x="1150" y="140"/>
+    </arc>
+    <arc id="H010" class="positive influence" source="n_Differential_Cell_Expansion" target="n_Curvature">
+      <start x="1150" y="200"/>
+      <end x="1140" y="220"/>
+    </arc>
+    <arc id="H011" class="positive influence" source="n_Curvature" target="n_Shoot_Gravitropic_Bending_Over_Time">
+      <start x="1220" y="250"/>
+      <end x="1390" y="110"/>
+    </arc>
+    <arc id="H012" class="positive influence" source="n_Family_Genotype_Effects" target="n_LAZY_LZY_Module">
+      <start x="810" y="460"/>
+      <end x="800" y="140"/>
+    </arc>
+    <arc id="H013" class="positive influence" source="n_Family_Genotype_Effects" target="n_PIN_Auxin_Redistribution">
+      <start x="820" y="460"/>
+      <end x="820" y="220"/>
+    </arc>
+    <arc id="H014" class="positive influence" source="n_Family_Genotype_Effects" target="n_Differential_Cell_Expansion">
+      <start x="900" y="490"/>
+      <end x="1060" y="170"/>
+    </arc>
+    <arc id="H015" class="positive influence" source="n_Gravitropic_vs_Agravitropic_Families" target="n_Family_Genotype_Effects">
+      <start x="1020" y="490"/>
+      <end x="900" y="490"/>
+    </arc>
+    <arc id="H016" class="positive influence" source="n_Gravitropic_vs_Agravitropic_Families" target="n_Shoot_Gravitropic_Bending_Over_Time">
+      <start x="1130" y="460"/>
+      <end x="1490" y="140"/>
+    </arc>
+  </map>
+</sbgn>

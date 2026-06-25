@@ -1,0 +1,17 @@
+edge_id,source,target,sign,layer,status,rationale,reference_needed
+H001,Gravistimulation,Statocytes,1,stimulus_to_sensing,hypothesis,"Rotation creates the physical context in which gravity-sensing cells may respond.",yes
+H002,Gravistimulation,Endodermis,1,stimulus_to_sensing,hypothesis,"Shoot reorientation may engage gravity-sensing tissues such as the endodermis.",yes
+H003,Gravistimulation,Amyloplast_Sedimentation,1,stimulus_to_sensing,hypothesis,"A change in orientation is expected to promote amyloplast sedimentation relative to the gravity vector.",yes
+H004,Statocytes,Amyloplast_Sedimentation,1,sensing,hypothesis,"Statocytes are placed upstream of the sedimentation process in this seed model.",yes
+H005,Endodermis,Amyloplast_Sedimentation,1,sensing,hypothesis,"The endodermis is represented as a tissue context for shoot amyloplast-based sensing.",yes
+H006,Amyloplast_Sedimentation,LAZY_LZY_Module,1,sensing_to_signalling,hypothesis,"Sedimentation is hypothesised to feed into LAZY/LZY-dependent signalling.",yes
+H007,LAZY_LZY_Module,PIN_Auxin_Redistribution,1,signalling,hypothesis,"The LAZY/LZY module is hypothesised to influence PIN-mediated auxin transport polarity.",yes
+H008,PIN_Auxin_Redistribution,Auxin_Asymmetry,1,signalling_to_response,hypothesis,"PIN-mediated redistribution is hypothesised to generate asymmetric auxin levels.",yes
+H009,Auxin_Asymmetry,Differential_Cell_Expansion,1,response,hypothesis,"Auxin asymmetry is hypothesised to promote unequal cell expansion across the shoot.",yes
+H010,Differential_Cell_Expansion,Curvature,1,response,hypothesis,"Unequal cell expansion is expected to promote curvature.",yes
+H011,Curvature,Shoot_Gravitropic_Bending_Over_Time,1,response_to_phenotype,hypothesis,"Curvature is treated as the physical component of time-dependent gravitropic bending.",yes
+H012,Family_Genotype_Effects,LAZY_LZY_Module,1,evolutionary_layer,hypothesis,"Genetic background may alter the strength or behaviour of gravity signalling modules.",yes
+H013,Family_Genotype_Effects,PIN_Auxin_Redistribution,1,evolutionary_layer,hypothesis,"Genetic background may alter auxin transport and redistribution during bending.",yes
+H014,Family_Genotype_Effects,Differential_Cell_Expansion,1,evolutionary_layer,hypothesis,"Genetic background may alter growth capacity or asymmetry.",yes
+H015,Gravitropic_vs_Agravitropic_Families,Family_Genotype_Effects,1,evolutionary_layer,hypothesis,"Comparative gravitropic categories may summarize inherited differences among families or genotypes.",yes
+H016,Gravitropic_vs_Agravitropic_Families,Shoot_Gravitropic_Bending_Over_Time,1,evolutionary_layer,hypothesis,"Family-level differences may be associated with different bending trajectories over time.",yes
