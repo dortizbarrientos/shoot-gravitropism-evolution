@@ -27,6 +27,24 @@ comparisons into a clear scientific project.
 - Preserve uncertainty. If a mechanism, direction, species scope, or timescale
   is unclear, say so plainly.
 
+## Network Representation Rules
+
+- Treat candidate_nodes.csv and candidate_edges.csv as the editable source
+  tables for hypothesis networks.
+- Treat SBGN files as derived graphical/model representations, not as the
+  primary source of truth.
+- Do not create or update SBGN files until the corresponding node and edge
+  tables have been reviewed.
+- For SBGN Activity Flow exports, include only edges explicitly marked for
+  inclusion, such as include_in_first_sbgn = yes.
+- Keep modulation, context, and classification edges separate from simple
+  signed causal edges.
+- Do not run PSoup or other model-conversion tools unless explicitly asked.
+- Always label whether a network is hypothesis-level, review-supported,
+  primary-paper-supported, or curated.
+- Do not treat a diagram standard such as SBGN as evidence that the biology is
+  correct.
+
 ## Reproducibility
 
 - Document commands that were run and what they were intended to check.

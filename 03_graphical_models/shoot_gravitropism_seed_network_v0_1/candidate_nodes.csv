@@ -1,0 +1,12 @@
+node_id,label,layer,node_type,status,plain_english_role
+Gravistimulation,Gravistimulation / rotation,stimulus,stimulus,hypothesis,"A change in shoot orientation relative to gravity."
+Endodermal_Statocyte_Gravity_Sensing,Endodermal statocyte gravity sensing,sensing,cell_tissue_process,hypothesis,"A combined sensing context representing gravity perception in shoot endodermal statocyte-like cells."
+Amyloplast_Displacement,Amyloplast displacement,sensing,process,hypothesis,"Movement or displacement of dense starch-containing organelles after reorientation."
+LAZY_LZY_Module,LAZY/LZY module,signalling,gene_module,hypothesis,"A signalling module proposed to connect gravity sensing with changes in auxin transport polarity."
+PIN_Auxin_Redistribution,PIN-mediated auxin redistribution,signalling,transport_process,hypothesis,"Changes in auxin transport that may redistribute auxin across the shoot."
+Auxin_Asymmetry,Auxin asymmetry,response,hormone_state,hypothesis,"Unequal auxin distribution across opposite sides of the shoot."
+Differential_Cell_Expansion,Differential cell expansion,response,growth_process,hypothesis,"Unequal cell expansion across opposite sides of the shoot."
+Curvature,Curvature,response,trait_component,hypothesis,"Physical bending of the shoot axis."
+Shoot_Gravitropic_Bending_Over_Time,Shoot gravitropic bending over time,phenotype,phenotype,hypothesis,"The time-dependent bending trajectory after gravistimulation."
+Family_Genotype_Effects,Family / genotype effects,evolutionary_layer,evolutionary_context,hypothesis,"Inherited background differences that may alter mechanisms or bending trajectories."
+Gravitropic_vs_Agravitropic_Families,Gravitropic vs agravitropic families,evolutionary_layer,observed_classification,hypothesis,"An observed grouping based on bending behaviour, not a causal driver in this seed network."

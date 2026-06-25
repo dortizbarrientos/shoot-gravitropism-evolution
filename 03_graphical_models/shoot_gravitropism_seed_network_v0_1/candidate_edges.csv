@@ -1,0 +1,14 @@
+edge_id,source,target,sign,relation_type,layer,status,rationale,reference_needed,include_in_first_sbgn
+H001,Gravistimulation,Amyloplast_Displacement,1,causal,stimulus_to_sensing,hypothesis,"Rotation changes the orientation of the shoot relative to gravity and is hypothesised to promote amyloplast displacement.",yes,yes
+H002,Endodermal_Statocyte_Gravity_Sensing,Amyloplast_Displacement,NA,context,sensing,hypothesis,"Endodermal statocyte gravity sensing provides the cellular and tissue context in which amyloplast displacement is interpreted.",yes,no
+H003,Amyloplast_Displacement,LAZY_LZY_Module,1,causal,sensing_to_signalling,hypothesis,"Amyloplast displacement is hypothesised to feed into LAZY/LZY-dependent gravity signalling.",yes,yes
+H004,LAZY_LZY_Module,PIN_Auxin_Redistribution,1,causal,signalling,hypothesis,"The LAZY/LZY module is hypothesised to influence PIN-mediated auxin transport polarity.",yes,yes
+H005,PIN_Auxin_Redistribution,Auxin_Asymmetry,1,causal,signalling_to_response,hypothesis,"PIN-mediated redistribution is hypothesised to generate auxin asymmetry across the shoot.",yes,yes
+H006,Auxin_Asymmetry,Differential_Cell_Expansion,1,causal,response,hypothesis,"Auxin asymmetry is hypothesised to promote differential cell expansion.",yes,yes
+H007,Differential_Cell_Expansion,Curvature,1,causal,response,hypothesis,"Unequal cell expansion is expected to produce curvature.",yes,yes
+H008,Curvature,Shoot_Gravitropic_Bending_Over_Time,1,causal,response_to_phenotype,hypothesis,"Curvature contributes to the time-dependent bending trajectory measured after gravistimulation.",yes,yes
+H009,Family_Genotype_Effects,LAZY_LZY_Module,NA,modulation,evolutionary_layer,hypothesis,"Genetic background may alter the strength, timing, or form of LAZY/LZY-related signalling without being represented as a simple activation or inhibition.",yes,maybe
+H010,Family_Genotype_Effects,PIN_Auxin_Redistribution,NA,modulation,evolutionary_layer,hypothesis,"Genetic background may alter auxin transport or redistribution without a known simple positive or negative sign.",yes,maybe
+H011,Family_Genotype_Effects,Differential_Cell_Expansion,NA,modulation,evolutionary_layer,hypothesis,"Genetic background may alter growth capacity or responsiveness without a known simple positive or negative sign.",yes,maybe
+H012,Family_Genotype_Effects,Shoot_Gravitropic_Bending_Over_Time,NA,modulation,evolutionary_layer,hypothesis,"Genetic background may alter the observed bending trajectory over time.",yes,maybe
+H013,Shoot_Gravitropic_Bending_Over_Time,Gravitropic_vs_Agravitropic_Families,NA,classification,evolutionary_layer,hypothesis,"Observed bending behaviour can be used to classify families or genotypes as gravitropic or agravitropic.",yes,no

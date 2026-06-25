@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<sbgn xmlns="http://sbgn.org/libsbgn/0.2">
+  <map language="activity flow">
+    <glyph id="comp_stimulus" class="compartment">
+      <label text="Stimulus"/>
+      <bbox x="20" y="20" w="240" h="150"/>
+    </glyph>
+    <glyph id="comp_sensing" class="compartment">
+      <label text="Sensing"/>
+      <bbox x="300" y="20" w="260" h="150"/>
+    </glyph>
+    <glyph id="comp_signalling" class="compartment">
+      <label text="Signalling"/>
+      <bbox x="600" y="20" w="340" h="230"/>
+    </glyph>
+    <glyph id="comp_response" class="compartment">
+      <label text="Response"/>
+      <bbox x="980" y="20" w="320" h="310"/>
+    </glyph>
+    <glyph id="comp_phenotype" class="compartment">
+      <label text="Phenotype"/>
+      <bbox x="1340" y="20" w="300" h="150"/>
+    </glyph>
+
+    <glyph id="n_Gravistimulation" class="biological activity" compartmentRef="comp_stimulus">
+      <label text="Gravistimulation / rotation"/>
+      <bbox x="60" y="80" w="160" h="60"/>
+    </glyph>
+    <glyph id="n_Amyloplast_Displacement" class="biological activity" compartmentRef="comp_sensing">
+      <label text="Amyloplast displacement"/>
+      <bbox x="340" y="80" w="180" h="60"/>
+    </glyph>
+    <glyph id="n_LAZY_LZY_Module" class="biological activity" compartmentRef="comp_signalling">
+      <label text="LAZY/LZY module"/>
+      <bbox x="670" y="70" w="160" h="60"/>
+    </glyph>
+    <glyph id="n_PIN_Auxin_Redistribution" class="biological activity" compartmentRef="comp_signalling">
+      <label text="PIN-mediated auxin redistribution"/>
+      <bbox x="670" y="160" w="210" h="60"/>
+    </glyph>
+    <glyph id="n_Auxin_Asymmetry" class="biological activity" compartmentRef="comp_response">
+      <label text="Auxin asymmetry"/>
+      <bbox x="1040" y="60" w="160" h="60"/>
+    </glyph>
+    <glyph id="n_Differential_Cell_Expansion" class="biological activity" compartmentRef="comp_response">
+      <label text="Differential cell expansion"/>
+      <bbox x="1040" y="150" w="200" h="60"/>
+    </glyph>
+    <glyph id="n_Curvature" class="biological activity" compartmentRef="comp_response">
+      <label text="Curvature"/>
+      <bbox x="1040" y="240" w="160" h="60"/>
+    </glyph>
+    <glyph id="n_Shoot_Gravitropic_Bending_Over_Time" class="biological activity" compartmentRef="comp_phenotype">
+      <label text="Shoot gravitropic bending over time"/>
+      <bbox x="1390" y="80" w="200" h="60"/>
+    </glyph>
+
+    <arc id="H001" class="positive influence" source="n_Gravistimulation" target="n_Amyloplast_Displacement">
+      <start x="220" y="110"/>
+      <end x="340" y="110"/>
+    </arc>
+    <arc id="H003" class="positive influence" source="n_Amyloplast_Displacement" target="n_LAZY_LZY_Module">
+      <start x="520" y="110"/>
+      <end x="670" y="100"/>
+    </arc>
+    <arc id="H004" class="positive influence" source="n_LAZY_LZY_Module" target="n_PIN_Auxin_Redistribution">
+      <start x="750" y="130"/>
+      <end x="760" y="160"/>
+    </arc>
+    <arc id="H005" class="positive influence" source="n_PIN_Auxin_Redistribution" target="n_Auxin_Asymmetry">
+      <start x="880" y="190"/>
+      <end x="1040" y="90"/>
+    </arc>
+    <arc id="H006" class="positive influence" source="n_Auxin_Asymmetry" target="n_Differential_Cell_Expansion">
+      <start x="1120" y="120"/>
+      <end x="1140" y="150"/>
+    </arc>
+    <arc id="H007" class="positive influence" source="n_Differential_Cell_Expansion" target="n_Curvature">
+      <start x="1140" y="210"/>
+      <end x="1120" y="240"/>
+    </arc>
+    <arc id="H008" class="positive influence" source="n_Curvature" target="n_Shoot_Gravitropic_Bending_Over_Time">
+      <start x="1200" y="270"/>
+      <end x="1390" y="110"/>
+    </arc>
+  </map>
+</sbgn>
