@@ -78,6 +78,71 @@ comparisons into a clear scientific project.
   version.
 - Clearly label generated previews as derived artifacts.
 
+## Publication Figure Rules
+
+- Distinguish three figure stages:
+  1. working previews;
+  2. draft figure elements;
+  3. publication-quality figures.
+- Terminal-generated Graphviz, Mermaid, or SVG outputs are working previews
+  unless explicitly labelled otherwise.
+- Working previews are for checking graph logic, signs, edge direction,
+  modules, and evidence status.
+- Draft figure elements may be used as starting material for a manuscript
+  figure, but they are not automatically publication quality.
+- Publication-quality network figures require an explicit figure-design step.
+- Network figures must be readable on A4 or letter-sized pages.
+- Do not force a large network into one panel if labels, arrows, or signs
+  become hard to read.
+- Prefer modular views over crowded whole-network views.
+- Before producing a publication-quality network figure, ask or infer:
+  - target journal or format;
+  - page size and column width;
+  - whether the figure is single-column, double-column, or full-page;
+  - final output format required, such as PDF, SVG, EPS, TIFF, or PNG;
+  - required resolution if raster output is needed;
+  - colour constraints, including colour-blind-safe palettes and greyscale
+    legibility;
+  - whether labels must remain inside nodes or move to a legend/table.
+- For large networks, create several figure types:
+  1. causal spine view;
+  2. layer/module view;
+  3. evidence-status view;
+  4. genotype/modulation view;
+  5. full network as supplementary material only.
+- For publication-quality figures, produce or propose:
+  - a simplified main-panel network;
+  - optional supplementary full-network view;
+  - concise node labels;
+  - a clear visual legend;
+  - consistent line weights and font sizes;
+  - evidence-status encoding only if it does not clutter the causal message.
+- Keep node labels short in figures; put long definitions in tables or
+  captions.
+- Use consistent visual grammar:
+  - solid black arrows for positive causal edges;
+  - red blunt-ended or clearly marked edges for negative causal edges;
+  - dashed blue arrows for modulation;
+  - dotted grey edges for context;
+  - dashed grey edges for classification or analysis labels.
+- Keep related nodes aligned by layer when possible: stimulus, sensing,
+  signalling, response, phenotype, evolutionary layer.
+- Prefer left-to-right layouts for causal chains and top-to-bottom layouts for
+  layered summaries.
+- Avoid crossing edges where possible.
+- Use exports/ for generated figure files and include a README explaining how
+  each figure was generated.
+- Always state whether a figure is hypothesis-level, review-supported,
+  primary-paper-supported, or curated.
+- If terminal tools cannot make a publication-quality figure, say so plainly
+  and propose the correct finishing path, such as manual refinement in
+  Illustrator, Inkscape, Affinity Designer, Cytoscape, or a scripted
+  matplotlib/SVG workflow.
+- Never imply that a generated preview is manuscript-ready unless it has passed
+  a publication-figure review.
+- Do not treat a visually polished network as stronger evidence than the
+  underlying references.
+
 ## Reproducibility
 
 - Document commands that were run and what they were intended to check.
