@@ -9,16 +9,17 @@ model ideas clearly scoped to this trait.
 
 ## Folder Map
 
-- `flashp_learning/`: Notes and toy files for learning how FLASH-P works safely.
-- `references/`: Papers, citation notes, DOI lists, and evidence tables for
+- `01_references/`: Papers, citation notes, DOI lists, and evidence tables for
   shoot gravitropism.
-- `hypotheses/`: Biological hypotheses and candidate causal claims to test.
-- `graphical_models/`: Diagrams, pathway sketches, and causal graph drafts.
-- `mathematical_theories/`: Notes on equations, dynamical systems, curvature,
+- `02_hypotheses/`: Biological hypotheses and candidate causal claims to test.
+- `03_graphical_models/`: Diagrams, pathway sketches, and causal graph drafts.
+- `04_mathematical_theories/`: Notes on equations, dynamical systems, curvature,
   auxin redistribution, mechanics, and other formal ideas.
-- `developmental_models/`: Developmental-time models of shoot gravitropism.
-- `evolutionary_models/`: Comparative and evolutionary-time questions.
-- `notes/`: General working notes that do not yet belong elsewhere.
+- `05_developmental_models/`: Developmental-time models of shoot gravitropism.
+- `06_evolutionary_models/`: Comparative and evolutionary-time questions.
+- `07_flashp_learning/`: Notes and toy files for learning how FLASH-P works safely.
+- `08_notes/`: General working notes that do not yet belong elsewhere.
+- `09_summary_sessions/`: Dated summaries of work completed and suggested next steps.
 
 ## Working Principle
 

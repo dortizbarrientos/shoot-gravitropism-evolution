@@ -17,7 +17,7 @@ without running the full pipeline.
 
 4. `03-learning-examples/`
    - Read this while inspecting the toy files under
-     `shoot_gravitropism/flashp_learning/learning_examples/minimal_light_network/`.
+     `07_flashp_learning/learning_examples/minimal_light_network/`.
 
 ## Safety Principle
 

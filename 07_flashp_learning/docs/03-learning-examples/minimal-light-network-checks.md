@@ -5,7 +5,7 @@ safe checks selected for it. The full FLASH-P pipeline was not run.
 
 ## Example Location
 
-`shoot_gravitropism/flashp_learning/learning_examples/minimal_light_network/`
+`07_flashp_learning/learning_examples/minimal_light_network/`
 
 Files created for teaching:
 
@@ -63,12 +63,12 @@ format example.
 Command attempted:
 
 ```bash
-python Flash-P_Plant/Codex/Agent/shared/validate_schema.py shoot_gravitropism/flashp_learning/learning_examples/minimal_light_network/curated_edges.json
+python Flash-P_Plant/Codex/Agent/shared/validate_schema.py 07_flashp_learning/learning_examples/minimal_light_network/curated_edges.json
 ```
 
 What it was meant to check:
 
-- Only `shoot_gravitropism/flashp_learning/learning_examples/minimal_light_network/curated_edges.json`.
+- Only `07_flashp_learning/learning_examples/minimal_light_network/curated_edges.json`.
 - Specifically, whether that file matches the `CuratedEdgesFile` Pydantic
   schema.
 
@@ -100,7 +100,7 @@ Why no further repository validators were run:
 
 ## Documentation Organization
 
-The `flashp_learning/docs/` folder is organized as a learning path:
+The `07_flashp_learning/docs/` folder is organized as a learning path:
 
 - `00-overview/`: first-pass repository orientation.
 - `01-pipeline/`: stage-by-stage pipeline notes.
