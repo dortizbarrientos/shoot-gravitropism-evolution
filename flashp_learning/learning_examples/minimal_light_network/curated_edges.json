@@ -1,0 +1,30 @@
+{
+  "metadata": {
+    "flash_p_version": "light-1.0",
+    "phenotype": "shoot_branching",
+    "species": "Toy plant",
+    "created": "2026-06-25",
+    "total_edges": 2
+  },
+  "nodes": {
+    "MAX2": "G",
+    "BRC1": "G",
+    "Shoot_Branching": "P"
+  },
+  "edges": [
+    {
+      "eid": "E001",
+      "s": "MAX2",
+      "t": "BRC1",
+      "x": 1,
+      "d": "10.0000/toy-example-not-real"
+    },
+    {
+      "eid": "E002",
+      "s": "BRC1",
+      "t": "Shoot_Branching",
+      "x": -1,
+      "d": "10.0000/toy-example-not-real"
+    }
+  ]
+}

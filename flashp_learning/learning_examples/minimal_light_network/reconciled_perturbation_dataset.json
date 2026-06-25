@@ -1,0 +1,29 @@
+{
+  "metadata": {
+    "flash_p_version": "light-1.0",
+    "phenotype": "shoot_branching",
+    "species": "Toy plant",
+    "created": "2026-06-25",
+    "phenotype_node": "Shoot_Branching",
+    "total_tested": 1,
+    "total_found": 1
+  },
+  "direction_threshold": 0.05,
+  "perturbations": [
+    {
+      "id": "T001",
+      "g": "MAX2",
+      "pt": "ko",
+      "ed": "up",
+      "ng": [
+        "MAX2"
+      ],
+      "m": {
+        "MAX2": 0.0
+      },
+      "exo": {},
+      "cb": "WT",
+      "rt": "em"
+    }
+  ]
+}

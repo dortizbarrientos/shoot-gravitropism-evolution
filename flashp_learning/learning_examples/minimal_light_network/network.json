@@ -1,0 +1,48 @@
+{
+  "metadata": {
+    "flash_p_version": "light-1.0",
+    "phenotype": "shoot_branching",
+    "species": "Toy plant",
+    "created": "2026-06-25",
+    "total_nodes": 3,
+    "total_edges": 2,
+    "source_nodes": 1,
+    "source_percentage": 33.3
+  },
+  "nodes": [
+    {
+      "id": "MAX2",
+      "ty": "G",
+      "fn": "MORE AXILLARY GROWTH 2",
+      "src": true
+    },
+    {
+      "id": "BRC1",
+      "ty": "G",
+      "fn": "BRANCHED 1",
+      "src": false
+    },
+    {
+      "id": "Shoot_Branching",
+      "ty": "P",
+      "fn": "Shoot branching",
+      "src": false
+    }
+  ],
+  "edges": [
+    {
+      "s": "MAX2",
+      "t": "BRC1",
+      "x": 1,
+      "eid": "E001",
+      "d": "10.0000/toy-example-not-real"
+    },
+    {
+      "s": "BRC1",
+      "t": "Shoot_Branching",
+      "x": -1,
+      "eid": "E002",
+      "d": "10.0000/toy-example-not-real"
+    }
+  ]
+}

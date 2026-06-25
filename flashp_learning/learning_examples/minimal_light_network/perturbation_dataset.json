@@ -1,0 +1,19 @@
+{
+  "metadata": {
+    "flash_p_version": "light-1.0",
+    "phenotype": "shoot_branching",
+    "species": "Toy plant",
+    "created": "2026-06-25",
+    "total_perturbations": 1
+  },
+  "perturbations": [
+    {
+      "id": "T001",
+      "g": "MAX2",
+      "pt": "ko",
+      "ed": "up",
+      "sp": "Toy plant",
+      "d": "10.0000/toy-example-not-real"
+    }
+  ]
+}
